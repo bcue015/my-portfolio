@@ -1,0 +1,40 @@
+.row {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	&--md-flex-row {
+		@mixin atMedium {
+			flex-direction: row;
+		}
+	}
+
+	&--gutters-small {
+		margin-right: -2rem;
+	}
+
+	&--gutters-small > div {
+		padding-right: 2rem;
+	}
+
+	&--gutters {
+		margin-right: -4rem;
+	}
+
+	&--gutters > div {
+		padding-right: 4rem;
+	}
+
+	&--gutters-large {
+		margin-right: -6rem;
+	}
+
+	&--gutters-large > div {
+		padding-right: 6rem;
+	}
+
+}
+.col {
+
+}
+
