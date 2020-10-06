@@ -9,6 +9,16 @@
 		}
 	}
 
+	&--align-start {
+		align-items: flex-start;
+	}
+
+	&--lg-flex-row {
+		@mixin atLarge {
+			flex-direction: row;
+		}
+	}
+
 	&--gutters-small {
 		margin-right: -2rem;
 	}
@@ -35,6 +45,53 @@
 
 }
 .col {
+
+	&-lg-8 {
+
+	}
+
+	&-lg-4 {
+
+	}
+
+	&-md-7 {
+
+	}
+
+	&-md-3 {
+
+	}
+
+	&-md-4 {
+
+	}
+
+	@mixin atMedium {
+		&-md-7 {
+			width: 58.33%;
+		}
+
+		&-md-5 {
+			width: 41.67%;
+		}
+
+		&-md-4 {
+			width: 33.33%;
+		}
+	}
+
+	@mixin atLarge {
+		&-lg-8 {
+			width: 66.66%
+		}
+
+		&-lg-4 {
+			width: 33.33%;
+		}
+
+
+	}
+
 
 }
 

@@ -1,0 +1,16 @@
+.my-profile {
+
+	&__story-title {
+		font-size: 2.8rem;
+		color: $mainColor;
+	}
+
+	&__story-text {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 1.6;
+		color: $mainGray;
+		text-align: justify;
+	}
+}
+

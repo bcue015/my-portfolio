@@ -1,0 +1,45 @@
+.u-section-title {
+	font-weight: 300;
+	font-size: 4rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	line-height: 1;
+
+	&--mb-mt {
+		margin-bottom: 7rem;
+		margin-top: 0;
+	}
+
+	& span {
+		font-weight: 400;
+	}
+}
+
+.u-color-primary {
+	color: $primaryColor;
+}
+
+.u-color-main {
+	color: $mainColor;
+}
+
+.u-color-white {
+	color: white;
+}
+
+.u-margin-y-small {
+	margin: 2rem 0;
+}
+
+.u-bg-gradient-main {
+	background-image: linear-gradient( to right bottom, rgba($primaryColor), rgba($mainColor));
+}
+
+.u-bg-white {
+	background-color: white;
+}
+
+.u-bg-main {
+	background-color: $mainColor;
+}

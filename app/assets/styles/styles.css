@@ -3,10 +3,15 @@
 @import "base/_mixins";
 @import "base/_global";
 @import "base/_animation";
+@import "base/_utilities";
 @import "modules/_btn";
+@import "modules/_card";
 @import "modules/_page-section";
 @import "modules/_wrapper";
 @import "modules/_grid";
+@import "modules/_large-hero";
+@import "modules/_my-profile";
+@import "modules/_my-skills";
 
 
 

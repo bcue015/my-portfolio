@@ -5,5 +5,21 @@
 	max-width: 1136px;
 	margin-left: auto;
 	margin-right: auto;
+
+	&--narrow-xs-to-md {
+		max-width: 800px;
+		@mixin atLarge {
+			max-width: 1136px;
+		}
+	}
+
+	&--my-profile {
+		max-width: 600px;
+		@mixin atMedium {
+			max-width: 1136px;
+		}
+	}
 }
+
+
 

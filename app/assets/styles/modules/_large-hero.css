@@ -1,0 +1,73 @@
+.large-hero {
+	margin-bottom: 10rem;
+	padding-top: 15rem;
+
+	&__title {
+		font-weight: 700;
+		color: $mainDark;
+		margin: 0 0 2rem 0;
+
+		@mixin atExtraSmall {
+			font-size: 4.6rem;
+		}
+
+		@mixin atSmall {
+			font-size: 5.6rem;
+		}
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		line-height: 2.3rem;
+		color: #4B515D;
+		margin-bottom: 2rem;
+		font-family: Roboto;
+		font-weight: 300;
+	}
+
+	&__photo {
+		display: none;
+
+		@mixin atLarge {
+			display: block;
+		}
+	}
+
+	&__img {
+		border-radius: 50%;
+		border: 20px solid $primaryColor;
+	}
+
+	&__description {
+		background-image: linear-gradient( to right bottom, rgba($primaryColor), rgba($mainColor));
+		position: relative;
+		top: -9.5rem;
+		margin-bottom: -8rem;
+		text-align: center;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 5px 10px 0 rgba(0,0,0,.12);
+		border-radius: 5px;	
+		padding: 1rem 0;
+		margin-top: 2rem;
+	}
+
+	&__name {
+		font-weight: 200;
+		color: white;
+		font-size: 3rem;
+		margin-top: 0;
+		margin-bottom: .5rem;
+		letter-spacing: .1rem;
+		font-family: Roboto;
+	}
+
+	&__job {
+		color: white;
+		font-size: 1.6rem;
+		font-family: Roboto;
+
+	}
+}
+
+.finest {
+	color: $mainColor ;
+}
