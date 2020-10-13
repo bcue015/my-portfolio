@@ -1,4 +1,9 @@
 .page-section {
 	padding-top: 9.68rem;
 	padding-bottom: 9.68rem;
+
+	&--very-small {
+		padding-top: 2.68rem;
+		padding-bottom: 2.68rem;
+	}
 }

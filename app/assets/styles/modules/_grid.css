@@ -3,6 +3,16 @@
 	align-items: center;
 	flex-direction: column;
 
+	@mixin atMedium {
+		&--skills-mb {
+			margin-bottom: 3.5rem;
+		}
+	}
+
+	&--mb {
+		margin-bottom: 4rem;
+	}
+
 	&--md-flex-row {
 		@mixin atMedium {
 			flex-direction: row;
@@ -18,6 +28,8 @@
 			flex-direction: row;
 		}
 	}
+
+
 
 	&--gutters-small {
 		margin-right: -2rem;
@@ -46,39 +58,40 @@
 }
 .col {
 
-	&-lg-8 {
-
-	}
-
-	&-lg-4 {
-
-	}
-
-	&-md-7 {
-
-	}
-
-	&-md-3 {
-
-	}
-
-	&-md-4 {
-
-	}
 
 	@mixin atMedium {
+		&-md-6 {
+			width: 50%;
+		}
+
 		&-md-7 {
 			width: 58.33%;
 		}
 
 		&-md-5 {
 			width: 41.67%;
+
+			&--order-2 {
+
+				@mixin atMedium {
+					order: 2;
+				}
+			}
+
+			&--order-2 {
+
+				@mixin atMedium {
+					order: 1;
+				}
+			}
 		}
 
 		&-md-4 {
 			width: 33.33%;
 		}
 	}
+
+
 
 	@mixin atLarge {
 		&-lg-8 {
@@ -87,6 +100,14 @@
 
 		&-lg-4 {
 			width: 33.33%;
+		}
+
+		&-lg-6 {
+			width: 50%;
+
+			&--align-start {
+				align-self: flex-start;
+			}
 		}
 
 

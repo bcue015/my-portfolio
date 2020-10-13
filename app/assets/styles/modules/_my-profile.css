@@ -2,15 +2,32 @@
 
 	&__story-title {
 		font-size: 2.8rem;
-		color: $mainColor;
+		text-align: center;
+		
+		@mixin atLarge {
+			text-align: left;
+		}
+
 	}
 
-	&__story-text {
+	&__story-text > p {
 		font-size: 1.6rem;
 		font-weight: 300;
 		line-height: 1.6;
 		color: $mainGray;
 		text-align: justify;
+	}
+
+	&__note {
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto;
+
+		&-text {
+			font-size: 1.6rem;
+			color: rgba(#880e4f , .6);
+			line-height: 1.5;
+		}
 	}
 }
 

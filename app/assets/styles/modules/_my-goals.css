@@ -1,0 +1,32 @@
+.my-goals {
+	position: relative;
+
+
+	&__wave {
+		position: absolute;
+		width: 50%;
+		display: none;
+		left: 0;
+		top: 10.68rem;
+		z-index: -1;
+
+		@mixin atLarge {
+			display: block;
+			height: 860px;
+		}
+
+		@mixin atBetLargeToExtraLarge {
+			height: 830px;
+		}
+
+		@mixin atExtraLarge {
+			height: 800px;
+
+		}
+	}
+
+	&__img {
+		align-self: center;
+	}
+
+}

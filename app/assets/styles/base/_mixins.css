@@ -22,6 +22,12 @@
 	}
 }
 
+@define-mixin atBetLargeToExtraLarge {
+	@media (min-width: 1100px) {
+		@mixin-content;
+	}
+}
+
 @define-mixin atExtraLarge {
 	@media (min-width: 1199px) {
 		@mixin-content;

@@ -1,0 +1,64 @@
+.primary-nav {
+	display: none;
+
+	@mixin atMedium {
+		display: block;
+		width: 50%;
+		height: 100%;
+		margin-left: auto;
+		animation: moveInRight 2s ease-out;
+		-webkit-animation: moveInRight 2s ease-out;
+		animation-timing-function: cubic-bezier(.59,.05,0,1.16);
+		-webkit-animation-timing-function: cubic-bezier(.59,.05,0,1.16);
+		backface-visibility: hidden;
+	}
+
+	&--is-visible {
+		display: block;
+	}
+
+	ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 25rem;
+
+		@mixin atMedium {
+			flex-direction: row;
+			justify-content: space-around;
+			height: auto;
+		}
+	}
+
+	li {
+			
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 1.8rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $primaryColor;
+		transition: all .3s ease-out;
+		display: block;
+		
+		&:hover {
+			color: $mainColor;
+			transform: rotate(9deg);
+		}
+
+		@mixin atMedium {
+
+			.site-header--dark & {
+				transform: scale(.9);
+			}
+
+			&.is-current-link {
+				color: $mainColor;
+			}
+		}
+	}
+}

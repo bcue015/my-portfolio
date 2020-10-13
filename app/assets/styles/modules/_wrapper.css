@@ -19,6 +19,17 @@
 			max-width: 1136px;
 		}
 	}
+
+	&--flex {
+		display: flex;
+		flex-direction: column;
+
+
+		@mixin atMedium {
+			align-items: center;
+			flex-direction: row;
+		}
+	}
 }
 
 

@@ -3,16 +3,17 @@
 	overflow: hidden;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.2);
-	margin-bottom: 5rem;
 
 	@mixin atMedium {
 		margin-bottom: .5rem;
 	}
 
+
 	&__body {
 		text-align: center;
 		padding: 1rem 1rem;
 	} 
+
 
 	&__title{
 		font-size: 2.5rem;
@@ -21,12 +22,14 @@
 		margin-bottom: 1.5rem;
 	}
 
+
 	&__subtitle{
 		font-size: 1.6rem;
 		font-weight: 500;
 		margin-bottom: 1.5rem;
 		color: #ffbb33;
 	}
+
 
 	&__text{
 		font-size: 1.4rem;
@@ -35,17 +38,26 @@
 		line-height: 1.4;
 	}
 
+
 	&__icons {
 		display: flex;
 		margin-top: 1.5rem;
 		justify-content: center;
 
 	}
+	
 
 	&__icon {
 
+		& a {
+			display: inline-block;
+			& img {
+				display: block;
+			}
+		}
+
 		&:not(:last-child) {
-			margin-right: 2rem;
+			margin-right: 3rem;
 		}
 	}
 }

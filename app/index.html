@@ -14,13 +14,47 @@
   <!-- endbuild -->
 </head>
 <body>
-  <section class="large-hero">
-    <div class="wrapper wrapper--narrow-xs-to-md">
+  <header class="site-header">
+    <div class="wrapper wrapper--flex">
+      <div class="site-header__logo">
+        <a href="#my-home" class="site-header__logo-link">
+          <h3 class="site-header__bamb-web">Bam Web</h3>
+          <h1 class="site-header__developer">Developer</h1>
+        </a>
+      </div>
+
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__top"></div>
+        <div class="site-header__menu-icon__middle"></div>
+        <div class="site-header__menu-icon__bottom"></div>
+      </div>
+
+      <nav class="primary-nav" >
+        <ul>
+          <li>
+            <a href="#my-profile" id="my-profile-link">About</a>
+          </li>
+          <li>
+            <a href="#my-skills" id="my-skills-link">Skills</a>
+          </li>
+          <li>
+            <a href="#my-service" id="my-service-link">Service</a>
+          </li>
+          <li>
+            <a href="#my-goals" id="my-goals-link">Goals</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="large-hero" id="my-home">
+    <div class="wrapper wrapper--narrow-xs-to-md trigger-scroll">
       <div class="row row--lg-flex-row row--gutters-small">
         <div class="col-lg-8">
           <div class="large-hero__content">
             <h1 class="large-hero__title">Making your website as simple at its <span class="finest">finest.</span></h1>
-            <p class="large-hero__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit harum inventore error odit iste nisi cumque odio labore, ea aliquam, ipsum dignissimos corporis ut enim voluptatibus saepe ullam consequuntur. Voluptatibus.</p>
+            <p class="large-hero__text">Howdy! My name is Bambi and I am a wordpress developer. I can design simple yet astonishing responsive user-interfaces with user-experience on the fly. I can also create your own personal blog with wordpress and I can make it dynamic!</p>
             <a href="#" class="btn btn--large btn--primary">Get in Touch</a>
           </div>
         </div>
@@ -39,53 +73,44 @@
 
   <div class="wrapper"><hr></div>
   
-  <section class="my-profile">
-    <div class="page-section">
-      <div class="wrapper wrapper--my-profile">
-        <h1 class="u-section-title u-section-title--mb-mt u-color-primary">About <span>Me</span></h1>
-        <div class="row row--md-flex-row row--gutters row--align-start">
-          <div class="col-md-5">
-            <div class="card u-bg-gradient-main u-color-white">
-              <img src="assets/images/bambi-1.jpg" alt="Bambi">
-              <div class="card__body">
-                <h4 class="card__title">Bambi Abangin</h4>
-                <h5 class="card__subtitle">Wordpress Developer</h5>
-                <hr>
-                <p class="card__text">There's nothing much happier when I successfully output the design onto the webpage. Which is why I do really love coding because it is full of logic.</p>
-                <hr>
-                <div class="card__icons">
-                  <div class="card__icon">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21.23" height="25.01" viewBox="0 0 21.23 42.01"><path class="card__icon-icon" fill="#FFF" d="M21.23,0.31V7H17.4a3.55,3.55,0,0,0-2.85.91,4.26,4.26,0,0,0-.74,2.72v4.77H21l-1,7.47H13.81V42H6.27V22.85H0V15.38H6.27V9.85q0-4.69,2.55-7.28A9,9,0,0,1,15.63,0,39.57,39.57,0,0,1,21.23.31Z"/></svg></a>
-                  </div>
-                  <div class="card__icon">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="51.78" height="25.06" viewBox="0 0 51.78 42.06"><path class="card__icon-icon" fill="#FFF" d="M51.78,5a22.23,22.23,0,0,1-5.32,5.52v1.38a30.15,30.15,0,0,1-1.25,8.53,30.81,30.81,0,0,1-3.76,8.13,32.1,32.1,0,0,1-6.06,6.92,27,27,0,0,1-8.48,4.8,31,31,0,0,1-10.62,1.8A29.47,29.47,0,0,1,0,37.29a22.71,22.71,0,0,0,2.56.13,20.78,20.78,0,0,0,13.17-4.53,10.63,10.63,0,0,1-9.92-7.36,13.45,13.45,0,0,0,2,.16,11,11,0,0,0,2.79-.36,10.44,10.44,0,0,1-6.09-3.67A10.25,10.25,0,0,1,2.1,14.91V14.78a10.52,10.52,0,0,0,4.8,1.34,10.6,10.6,0,0,1-3.45-3.78A10.34,10.34,0,0,1,2.17,7.27,10.4,10.4,0,0,1,3.62,1.94a30.08,30.08,0,0,0,9.71,7.83A29.57,29.57,0,0,0,25.53,13a11.79,11.79,0,0,1-.26-2.43,10.23,10.23,0,0,1,3-7.48,10.64,10.64,0,0,1,15,0l0.21,0.22A20.81,20.81,0,0,0,50.33.8a10.3,10.3,0,0,1-4.67,5.85A21.14,21.14,0,0,0,51.78,5Z"/></svg></a>
-                  </div>
-                  <div class="card__icon">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="42.01" height="25.01" viewBox="0 0 42.01 42.01"><path class="card__icon-icon" fill="#FFF" d="M37.25,35.49V17.77H33.56a11.77,11.77,0,0,1,.57,3.58,12.12,12.12,0,0,1-1.75,6.36,12.76,12.76,0,0,1-4.76,4.59A13.13,13.13,0,0,1,21.06,34a12.78,12.78,0,0,1-9.19-3.71,12,12,0,0,1-3.83-9,11.77,11.77,0,0,1,.49-3.56H4.68V35.49a1.63,1.63,0,0,0,1.6,1.67h29.3a1.63,1.63,0,0,0,1.17-.47A1.59,1.59,0,0,0,37.25,35.49ZM29.48,20.92A7.75,7.75,0,0,0,27,15.14a8.28,8.28,0,0,0-6-2.4,8.25,8.25,0,0,0-5.91,2.39,7.75,7.75,0,0,0-2.47,5.78,7.75,7.75,0,0,0,2.47,5.79A8.25,8.25,0,0,0,21,29.1a8.28,8.28,0,0,0,6-2.4A7.75,7.75,0,0,0,29.48,20.92Zm7.76-9.84V6.56a1.84,1.84,0,0,0-.54-1.31,1.8,1.8,0,0,0-1.31-.56H30.61a1.8,1.8,0,0,0-1.31.56,1.84,1.84,0,0,0-.54,1.31v4.52A1.87,1.87,0,0,0,30.6,13h4.8a1.87,1.87,0,0,0,1.85-1.89h0ZM42,5.39V36.62A5.41,5.41,0,0,1,36.62,42H5.39a5.19,5.19,0,0,1-3.8-1.59A5.19,5.19,0,0,1,0,36.62V5.39a5.19,5.19,0,0,1,1.59-3.8A5.19,5.19,0,0,1,5.39,0H36.62a5.19,5.19,0,0,1,3.8,1.59A5.19,5.19,0,0,1,42,5.39Z"/></svg></a>
-                  </div>
-                  <div class="card__icon">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="34.75" height="25" viewBox="0 0 34.75 42"><path class="card__icon-icon" fill="#FFF" d="M22.13,29.15v5q0,1.57-.91,1.57a1.5,1.5,0,0,1-1.06-.52V28.09a1.5,1.5,0,0,1,1.06-.54Q22.13,27.55,22.13,29.15Zm7.92,0v1.08H27.95V29.17q0-1.59,1.06-1.59t1,1.59v0ZM7.42,24H9.92V21.86H2.62v2.2H5.08V37.4H7.42V24ZM14.17,37.4h2.09V25.82H14.17v8.86a1.86,1.86,0,0,1-1.31,1,0.48,0.48,0,0,1-.49-0.47s0,0,0,0a6.52,6.52,0,0,1,0-.82V25.82H10.23V35a5.79,5.79,0,0,0,.19,1.71,1.26,1.26,0,0,0,1.36.87,3.43,3.43,0,0,0,2.39-1.43V37.4Zm10.05-3.47V29.33A8.33,8.33,0,0,0,24,27a1.63,1.63,0,0,0-1.67-1.31A2.82,2.82,0,0,0,20.16,27v-5.1H18.08V37.4h2.09V36.27a2.91,2.91,0,0,0,2.18,1.31A1.62,1.62,0,0,0,24,36.27,8.61,8.61,0,0,0,24.22,33.92Zm7.92-.24v-0.3H30a11.6,11.6,0,0,1,0,1.43,0.9,0.9,0,0,1-.94.85q-1.08,0-1.08-1.61V32h4.19V29.59a4.65,4.65,0,0,0-.66-2.72,3.2,3.2,0,0,0-5,0,4.52,4.52,0,0,0-.66,2.72v4.05a4.4,4.4,0,0,0,.66,2.72A3,3,0,0,0,29,37.56a2.9,2.9,0,0,0,3-2.51,10.31,10.31,0,0,0,.09-1.36h0ZM17.89,12.3V7.38q0-1.61-1-1.61t-1,1.61V12.3q0,1.64,1,1.64T17.89,12.3ZM34.74,29.9a40.6,40.6,0,0,1-.61,8.2,4.45,4.45,0,0,1-1.36,2.32,4.1,4.1,0,0,1-2.39,1.08,125.31,125.31,0,0,1-13,.49,125.31,125.31,0,0,1-13-.49A4.15,4.15,0,0,1,2,40.42,4.28,4.28,0,0,1,.63,38.1,39.76,39.76,0,0,1,0,29.9a40.6,40.6,0,0,1,.61-8.2A4.45,4.45,0,0,1,2,19.37a4.25,4.25,0,0,1,2.41-1.1q4.29-.47,13-0.47t13,0.47a4.4,4.4,0,0,1,3.75,3.42A39.76,39.76,0,0,1,34.74,29.9ZM11.35,0h2.39L10.91,9.35V15.7H8.57V9.35a39.68,39.68,0,0,0-1.43-5Q6.27,2,5.61,0H8.1L9.77,6.16ZM20,7.8v4.1a4.59,4.59,0,0,1-.66,2.76,2.88,2.88,0,0,1-2.49,1.19,2.9,2.9,0,0,1-2.46-1.19,4.68,4.68,0,0,1-.66-2.76V7.8a4.59,4.59,0,0,1,.66-2.74,2.9,2.9,0,0,1,2.46-1.19,2.88,2.88,0,0,1,2.49,1.19A4.59,4.59,0,0,1,20,7.8ZM27.87,4V15.7H25.74V14.43a3.37,3.37,0,0,1-2.41,1.45A1.31,1.31,0,0,1,22,15a6,6,0,0,1-.19-1.76V4h2.13V12.6a6.14,6.14,0,0,0,0,.82,0.49,0.49,0,0,0,.47.52h0a1.87,1.87,0,0,0,1.31-1V4h2.16Z"/></svg></a>
-                  </div>
+  <section class="my-profile page-section" id="my-profile" data-matching-link="#my-profile-link">
+    <div class="wrapper wrapper--my-profile">
+      <h1 class="u-section-title u-section-title--mb-mt u-color-primary trigger-reveal">About <span>Me</span></h1>
+      <div class="row row--md-flex-row row--gutters row--align-start trigger-reveal">
+        <div class="col-md-5">
+          <div class="card u-bg-gradient-main u-color-white">
+            <img class="lazyload" data-srcset="assets/images/bambi-1.jpg" alt="Bambi">
+            <div class="card__body">
+              <h4 class="card__title">Bambi Abangin</h4>
+              <h5 class="card__subtitle">Wordpress Developer</h5>
+              <hr>
+              <p class="card__text">&quot; There's nothing much happier when I successfully output the design onto the webpage. Which is why I do really love coding because it is full of logic. &quot;</p>
+              <hr>
+              <div class="card__icons">
+                <div class="card__icon">
+                  <a class="" href="#"><img src="assets/images/icons/facebook.svg" alt="facebook"></a>
+                </div>
+                <div class="card__icon">
+                  <a class="" href="#"><img src="assets/images/icons/twitter.svg" alt="twitter"></a>
+                </div>
+                <div class="card__icon">
+                  <a class="" href="#"><img src="assets/images/icons/youtube.svg" alt="youtube"></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-7">
-            <div class="my-profile__story">
-              <h3 class="my-profile__story-title">My Web Dev Story</h3>
+        </div>
+        <div class="col-md-7 u-resp-mt">
+          <div class="my-profile__story">
+            <h3 class="my-profile__story-title u-color-primary u-title-bb-mb" >My Web Dev Story</h3>
+            <div class="my-profile__story-text">
+              <p>It all started when a friend of mine(a web developer) told me about this web development stuffs while drinking beers and chillin' for good. I would've never be curious about it if he would have not told me his monthly income. So I went home, did a lot of search on it and this kind of job pays pretty well. And this where it began.</p>
               <br>
+              <p>Youtube is my bestfriend whenever I want to learn something new and because of it I learned HTML, CSS, Bootstrap, PHP and Javascript. To tell you frankly, those video tutorials were not enough to enhance my skills so I have to dig deeper.</p>
               <br>
-              <hr>
+              <p>Thanks to torrent sites, I manage to download those paid/premium video tutorials cause I dont want to spend a single penny though you already knew how to get it for free. I always love freebies, no offense.</p>
               <br>
-              <br>
-              <!-- <p class="my-profile__story-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo animi soluta ratione quisquam, dicta ab cupiditate iure eaque? Repellendus voluptatum, magni impedit eaque delectus, beatae maxime temporibus maiores quibusdam quasi.Rem magnam ad perferendis iusto sint tempora ea voluptatibus iure, animi excepturi modi aut possimus in hic molestias repellendus illo ullam odit quia velit. Qui expedita sit quo, maxime molestiae.</p> -->
-              <p class="my-profile__story-text">It all started when a friend of mine</p>
-              <br>
-              <p class="my-profile__story-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo animi soluta ratione quisquam, dicta ab cupiditate iure eaque? Repellendus voluptatum, magni impedit eaque delectus, beatae maxime temporibus maiores quibusdam quasi.Rem magnam ad perferendis iusto sint tempora ea voluptatibus iure.</p>
-              <br>
-              <p class="my-profile__story-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo animi soluta ratione quisquam, dicta ab cupiditate iure eaque?</p>
-              <br>
-              <p class="my-profile__story-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo eaque minima, excepturi aperiam explicabo, repudiandae tenetur omnis laudantium eveniet consequuntur rem nulla. Maxime laboriosam ipsum accusamus excepturi, quae nostrum, error dolorum pariatur sunt fugiat voluptates possimus, magni laudantium, nobis? Sed.</p>
+              <p>Then I watch those video courses and I didnt regret it. I learned about web development workflow, making your website responsive, about Node Package Manager(NPM), automation tools like Gulp and Webpack, contributing projects to Github, Object-Oriented Programming in Javascript, compiling and bundling CSS and Javascript, using BEM(Block Element Modifier) for your CSS Architecture and using Babel for Javascript. Wordpress is the one that I was excited and eager to learn and it took most of my time developing websites using wordpress.</p>
             </div>
           </div>
         </div>
@@ -93,82 +118,171 @@
     </div>
   </section>
 
-
-  <section class="page-section my-skills">
-    <h1 class="u-section-title u-section-title--mb-mt u-color-main">My <span>Skills</span></h1>
+  <section class="page-section my-skills lazyload" id="my-skills" data-matching-link="#my-skills-link">
+    <h1 class="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">My <span>Skills</span></h1>
     <div class="wrapper wrapper--my-profile">
-      <div class="row row--md-flex-row row--gutters-small">
+      <div class="row row--md-flex-row row--gutters row--skills-mb trigger-reveal">
         <div class="col-md-4">
           <div class="my-skills__card">
             <div class="my-skills__card-img">
-              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" class="svg-inline--fa fa-html5 fa-w-12" height="70" width="70" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path class="my-skills__card-icon" fill="#561514" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg>
+              <img src="assets/images/icons/html.svg" alt="HTML">
             </div>
             <div class="my-skills__card-body">
               <h5 class="my-skills__card-title">HTML 5</h5>
-              <p class="my-skills__card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, nihil vero a ratione perferendis quibusdam soluta quasi assumenda, eaque officiis facilis dignissimos sit. Sapiente, vero cum nesciunt magnam alias molestiae, ratione consequatur porro, praesentium reiciendis quaerat nobis optio labore quidem.</p>
+              <p class="my-skills__card-text">The very basic language in web development and the most easiest to learn of all time. It took me a week for me learn this language before proceeding CSS. But there are still some elements or tags that I need to work on with because I'm not really a fan of preemptive memorizing. Researching is my meat and potatoes.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="my-skills__card">
             <div class="my-skills__card-img">
-              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="css3-alt" height="70" width="70" class="svg-inline--fa fa-css3-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path class="my-skills__card-icon" fill="#561514" d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path></svg>
+              <img src="assets/images/icons/css.svg" alt="css">
             </div>
             <div class="my-skills__card-body">
               <h5 class="my-skills__card-title">CSS 3</h5>
-              <p class="my-skills__card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, nihil vero a ratione perferendis quibusdam soluta quasi assumenda, eaque officiis facilis dignissimos sit. Sapiente, vero cum nesciunt magnam alias molestiae, ratione consequatur porro, praesentium reiciendis quaerat nobis optio labore quidem.</p>
+              <p class="my-skills__card-text">The language that made me hook for two months and still learning more about it. CSS will provide an eye-catching website and making it responsive to all devices like mobile and desktop. Some of developers underestimated this language because they think that its is so quite easy. Well, they have to reconsider to think again.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="my-skills__card">
             <div class="my-skills__card-img">
-              <svg aria-hidden="true" height="70" width="70" focusable="false" data-prefix="fab" data-icon="js-square" class="svg-inline--fa fa-js-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="my-skills__card-icon" fill="#561514" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path></svg>
+              <img src="assets/images/icons/javascript.svg" alt="javascript">
             </div>
             <div class="my-skills__card-body">
               <h5 class="my-skills__card-title">Javascript</h5>
-              <p class="my-skills__card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, nihil vero a ratione perferendis quibusdam soluta quasi assumenda, eaque officiis facilis dignissimos sit. Sapiente, vero cum nesciunt magnam alias molestiae, ratione consequatur porro, praesentium reiciendis quaerat nobis optio labore quidem.</p>
+              <p class="my-skills__card-text">The most interactive language in my web development courses. Though I only learn basics like object-oriented programming, its quite helpful for me as a developer in terms of manipulating classes or id's in the DOM(Document Object Model). In fact this is my stepping stone in learning more and more about javascript.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row row--md-flex-row row--gutters-small">
+      <div class="row row--md-flex-row row--gutters trigger-reveal">
         <div class="col-md-4">
-          <div class="my-skills__card">
+          <div class="my-skills__card my-skills__card--mb">
             <div class="my-skills__card-img">
-              <svg aria-hidden="true" height="70" width="70" focusable="false" data-prefix="fab" data-icon="bootstrap" class="svg-inline--fa fa-bootstrap fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="my-skills__card-icon" fill="#561514" d="M292.3 311.93c0 42.41-39.72 41.43-43.92 41.43h-80.89v-81.69h80.89c42.56 0 43.92 31.9 43.92 40.26zm-50.15-73.13c.67 0 38.44 1 38.44-36.31 0-15.52-3.51-35.87-38.44-35.87h-74.66v72.18h74.66zM448 106.67v298.66A74.89 74.89 0 0 1 373.33 480H74.67A74.89 74.89 0 0 1 0 405.33V106.67A74.89 74.89 0 0 1 74.67 32h298.66A74.89 74.89 0 0 1 448 106.67zM338.05 317.86c0-21.57-6.65-58.29-49.05-67.35v-.73c22.91-9.78 37.34-28.25 37.34-55.64 0-7 2-64.78-77.6-64.78h-127v261.33c128.23 0 139.87 1.68 163.6-5.71 14.21-4.42 52.71-17.98 52.71-67.12z"></path></svg>
+              <img src="assets/images/icons/bootstrap.svg" alt="bootstrap">
             </div>
             <div class="my-skills__card-body">
               <h5 class="my-skills__card-title">Bootstrap 4</h5>
-              <p class="my-skills__card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, nihil vero a ratione perferendis quibusdam soluta quasi assumenda, eaque officiis facilis dignissimos sit. Sapiente, vero cum nesciunt magnam alias molestiae, ratione consequatur porro, praesentium reiciendis quaerat nobis optio labore quidem.</p>
+              <p class="my-skills__card-text">I'm not really a fan of using bootstrap but I've had some experience of using it. It's quite easy and it can boost your web development workflow since it already have pre-designed components like carousel, buttons, alerts, cards and much more. But it can also be a pain when your employer wants a custom design and you're screwed.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="my-skills__card">
+          <div class="my-skills__card my-skills__card--mb">
             <div class="my-skills__card-img">
-              <svg aria-hidden="true" height="70" width="70" focusable="false" data-prefix="fab" data-icon="wordpress" class="svg-inline--fa fa-wordpress fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="my-skills__card-icon" fill="#561514" d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"></path></svg>
+              <img src="assets/images/icons/wordpress.svg" alt="wordpress">
             </div>
             <div class="my-skills__card-body">
               <h5 class="my-skills__card-title">Wordpress</h5>
-              <p class="my-skills__card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, nihil vero a ratione perferendis quibusdam soluta quasi assumenda, eaque officiis facilis dignissimos sit. Sapiente, vero cum nesciunt magnam alias molestiae, ratione consequatur porro, praesentium reiciendis quaerat nobis optio labore quidem.</p>
+              <p class="my-skills__card-text">At first, I had some difficulties of learning wordpress because this was my first CMS(Content Management System). It only requires a basic PHP knowledge and from time to time, I finally get it. I learned Custom Post Type, Wordpress Loop, Custom Queries, Advance Custom Fields, Communicating to REST API and much more.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="my-skills__card">
+          <div class="my-skills__card my-skills__card--mb">
             <div class="my-skills__card-img">
-              <svg aria-hidden="true" focusable="false" height="70" width="70" data-prefix="fab" data-icon="gulp" class="svg-inline--fa fa-gulp fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path class="my-skills__card-icon" fill="#561514" d="M209.8 391.1l-14.1 24.6-4.6 80.2c0 8.9-28.3 16.1-63.1 16.1s-63.1-7.2-63.1-16.1l-5.8-79.4-14.9-25.4c41.2 17.3 126 16.7 165.6 0zm-196-253.3l13.6 125.5c5.9-20 20.8-47 40-55.2 6.3-2.7 12.7-2.7 18.7.9 5.2 3 9.6 9.3 10.1 11.8 1.2 6.5-2 9.1-4.5 9.1-3 0-5.3-4.6-6.8-7.3-4.1-7.3-10.3-7.6-16.9-2.8-6.9 5-12.9 13.4-17.1 20.7-5.1 8.8-9.4 18.5-12 28.2-1.5 5.6-2.9 14.6-.6 19.9 1 2.2 2.5 3.6 4.9 3.6 5 0 12.3-6.6 15.8-10.1 4.5-4.5 10.3-11.5 12.5-16l5.2-15.5c2.6-6.8 9.9-5.6 9.9 0 0 10.2-3.7 13.6-10 34.7-5.8 19.5-7.6 25.8-7.6 25.8-.7 2.8-3.4 7.5-6.3 7.5-1.2 0-2.1-.4-2.6-1.2-1-1.4-.9-5.3-.8-6.3.2-3.2 6.3-22.2 7.3-25.2-2 2.2-4.1 4.4-6.4 6.6-5.4 5.1-14.1 11.8-21.5 11.8-3.4 0-5.6-.9-7.7-2.4l7.6 79.6c2 5 39.2 17.1 88.2 17.1 49.1 0 86.3-12.2 88.2-17.1l10.9-94.6c-5.7 5.2-12.3 11.6-19.6 14.8-5.4 2.3-17.4 3.8-17.4-5.7 0-5.2 9.1-14.8 14.4-21.5 1.4-1.7 4.7-5.9 4.7-8.1 0-2.9-6-2.2-11.7 2.5-3.2 2.7-6.2 6.3-8.7 9.7-4.3 6-6.6 11.2-8.5 15.5-6.2 14.2-4.1 8.6-9.1 22-5 13.3-4.2 11.8-5.2 14-.9 1.9-2.2 3.5-4 4.5-1.9 1-4.5.9-6.1-.3-.9-.6-1.3-1.9-1.3-3.7 0-.9.1-1.8.3-2.7 1.5-6.1 7.8-18.1 15-34.3 1.6-3.7 1-2.6.8-2.3-6.2 6-10.9 8.9-14.4 10.5-5.8 2.6-13 2.6-14.5-4.1-.1-.4-.1-.8-.2-1.2-11.8 9.2-24.3 11.7-20-8.1-4.6 8.2-12.6 14.9-22.4 14.9-4.1 0-7.1-1.4-8.6-5.1-2.3-5.5 1.3-14.9 4.6-23.8 1.7-4.5 4-9.9 7.1-16.2 1.6-3.4 4.2-5.4 7.6-4.5.6.2 1.1.4 1.6.7 2.6 1.8 1.6 4.5.3 7.2-3.8 7.5-7.1 13-9.3 20.8-.9 3.3-2 9 1.5 9 2.4 0 4.7-.8 6.9-2.4 4.6-3.4 8.3-8.5 11.1-13.5 2-3.6 4.4-8.3 5.6-12.3.5-1.7 1.1-3.3 1.8-4.8 1.1-2.5 2.6-5.1 5.2-5.1 1.3 0 2.4.5 3.2 1.5 1.7 2.2 1.3 4.5.4 6.9-2 5.6-4.7 10.6-6.9 16.7-1.3 3.5-2.7 8-2.7 11.7 0 3.4 3.7 2.6 6.8 1.2 2.4-1.1 4.8-2.8 6.8-4.5 1.2-4.9.9-3.8 26.4-68.2 1.3-3.3 3.7-4.7 6.1-4.7 1.2 0 2.2.4 3.2 1.1 1.7 1.3 1.7 4.1 1 6.2-.7 1.9-.6 1.3-4.5 10.5-5.2 12.1-8.6 20.8-13.2 31.9-1.9 4.6-7.7 18.9-8.7 22.3-.6 2.2-1.3 5.8 1 5.8 5.4 0 19.3-13.1 23.1-17 .2-.3.5-.4.9-.6.6-1.9 1.2-3.7 1.7-5.5 1.4-3.8 2.7-8.2 5.3-11.3.8-1 1.7-1.6 2.7-1.6 2.8 0 4.2 1.2 4.2 4 0 1.1-.7 5.1-1.1 6.2 1.4-1.5 2.9-3 4.5-4.5 15-13.9 25.7-6.8 25.7.2 0 7.4-8.9 17.7-13.8 23.4-1.6 1.9-4.9 5.4-5 6.4 0 1.3.9 1.8 2.2 1.8 2 0 6.4-3.5 8-4.7 5-3.9 11.8-9.9 16.6-14.1l14.8-136.8c-30.5 17.1-197.6 17.2-228.3.2zm229.7-8.5c0 21-231.2 21-231.2 0 0-8.8 51.8-15.9 115.6-15.9 9 0 17.8.1 26.3.4l12.6-48.7L228.1.6c1.4-1.4 5.8-.2 9.9 3.5s6.6 7.9 5.3 9.3l-.1.1L185.9 74l-10 40.7c39.9 2.6 67.6 8.1 67.6 14.6zm-69.4 4.6c0-.8-.9-1.5-2.5-2.1l-.2.8c0 1.3-5 2.4-11.1 2.4s-11.1-1.1-11.1-2.4c0-.1 0-.2.1-.3l.2-.7c-1.8.6-3 1.4-3 2.3 0 2.1 6.2 3.7 13.7 3.7 7.7.1 13.9-1.6 13.9-3.7z"></path></svg>
+              <img src="assets/images/icons/gulp.svg" alt="gulp">
             </div>
             <div class="my-skills__card-body">
               <h5 class="my-skills__card-title">Gulp 4</h5>
-              <p class="my-skills__card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, nihil vero a ratione perferendis quibusdam soluta quasi assumenda, eaque officiis facilis dignissimos sit. Sapiente, vero cum nesciunt magnam alias molestiae, ratione consequatur porro, praesentium reiciendis quaerat nobis optio labore quidem.</p>
+              <p class="my-skills__card-text">An automation tool that saves the day. Gulp saves me from auto compiling/bundling CSS and Javascript, auto-reloading webpages using browser-sync, optimizing images and svg's, minifying Javascript and CSS, and building. I already have my own configuration in my gulpfile and I used it in every projects to speed up my workflow.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="my-service page-section" id="my-service" data-matching-link="#my-service-link">
+    <h1 class="u-section-title u-section-title--mb-mt u-color-primary trigger-reveal">My <span>Service</span></h1>
+    <div class="wrapper">
+      <div class="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
+        <div class="col-md-5 col-md-5--order-2">
+          <div>
+            <img src="assets/images/icons/service-html.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="my-profile__story">
+            <h3 class="my-profile__story-title u-color-primary u-title-bb-mb">Web Design/Development</h3>
+            <div class="my-profile__story-text">
+              <p>I will convert your design/PSD into HTML and CSS with Javascipt.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
+        <div class="col-md-5 col-md-5--order-1">
+          <div>
+            <img src="assets/images/icons/service-wordpress.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="my-profile__story">
+            <h3 class="my-profile__story-title u-color-primary u-resp-mt u-title-bb-mb">Wordpress Development</h3>
+            <div class="my-profile__story-text">
+              <p>I will convert your design/PSD or HTML to Wordpress. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
+        <div class="col-md-5 col-md-5--order-2">
+          <div>
+            <img src="assets/images/icons/service-full.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="my-profile__story">
+            <h3 class="my-profile__story-title u-color-primary u-title-bb-mb">Website Blog Creation</h3>
+            <div class="my-profile__story-text">
+              <p>I will create your own Wordpress Blog, with unique and astonishing design. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-profile__note">
+        <h4 class="my-profile__note-text">Note: I can do designing as well if you're not able to provide your own design. Give me some information about your website and we are set. I will then provide all of the source code files after the website is done.</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-goals page-section page-section--no-pb" id="my-goals" data-matching-link="#my-goals-link">
+    <h1 class="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">My <span>Goals</span></h1>
+    <img class="my-goals__wave lazyload" data-srcset="assets/images/wave.png" alt="">
+    <div class="wrapper trigger-reveal">
+      <div class="row row--lg-flex-row row--gutters-large">
+        <div class="col-lg-6">
+            <div class="my-goals__img">
+              <img src="assets/images/icons/goals.svg" alt="">
+            </div>
+        </div>
+        <div class="col-lg-6 col-lg-6--align-start u-resp-mt--at-large">
+            <div class="my-profile__story">
+              <h3 class="my-profile__story-title u-color-main u-title-bb-mb">An Ongoing Learning</h3>
+              <div class="my-profile__story-text">
+                <p>Staying current is what I have in my mind right now because I dont want to get behind. Web development, wordpress specifically, is in demand yet a crowded places wherin you could meet a lots of talented competitors. Not to mention there are page-builders to which the one who doesn't know about coding can build an extravagant websites. And staying current to all of my tools and designs will help me rise up.</p>
+                <br>
+                <p>Next is learning javascript. Javascript is a popular language which most of the developers used. And I'm still learning a thing or two about this language, but first I have to learn the plain javascript language to whom they refered as &quot;vanilla javascript&quot;, before I proceed to those javascript frameworks like jquery and react.</p>
+                <br>
+                <p>And finally, I have to learn about advance wordpress, like the famous wordpress plugin woocommerce. Every e-commerce website always strikes my curiousity on how would they do it, how do they integrate payments or any questions regarding e-commerce that makes the question mark revolves around my head.</p>
+                <br>
+                <p>But it doesn't matter because I will never stop from learning. And if curiousity strikes me, then I will have to dig deeper cause its all worth it.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer u-bg-gradient-main page-section--very-small">
+    <div class="wrapper trigger-footer">
+      <p><span class="site-footer__text">Copyright &copy; 2020 Bam Web Dev. All rights reserved.</span> <a class="btn btn--primary1" href="#">Get in Touch</a></p>
+    </div>
+  </footer>
+
 
   <!-- build:js assets/scripts/App.js -->
   <script type="text/javascript" src="temp/scripts/App.js"></script>

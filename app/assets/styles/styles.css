@@ -9,9 +9,14 @@
 @import "modules/_page-section";
 @import "modules/_wrapper";
 @import "modules/_grid";
+@import "modules/_site-header";
+@import "modules/_primary-nav";
 @import "modules/_large-hero";
 @import "modules/_my-profile";
 @import "modules/_my-skills";
-
+@import "modules/_my-service";
+@import "modules/_my-goals";
+@import "modules/_site-footer";
+@import "modules/_reveal-item";
 
 

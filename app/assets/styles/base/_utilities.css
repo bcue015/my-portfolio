@@ -36,10 +36,45 @@
 	background-image: linear-gradient( to right bottom, rgba($primaryColor), rgba($mainColor));
 }
 
+.u-bg-gradient-main1 {
+	background-image: linear-gradient( to right bottom, rgba($mainColor), rgba($primaryColor));
+}
+
 .u-bg-white {
 	background-color: white;
 }
 
 .u-bg-main {
 	background-color: $mainColor;
+}
+
+.u-mt-mb {
+	margin: 2rem 0;
+}
+
+.u-resp-mt {
+	margin-top: 5rem;
+
+	@mixin atMedium {
+		margin-top: 0;
+	}
+}
+
+.u-resp-mt--at-large {
+	margin-top: 5rem;
+	
+	@mixin atLarge {
+		margin-top: 0;
+	}
+}
+
+.border {
+	border: 1px solid black;
+}
+
+.u-title-bb-mb {
+	border-bottom: 1px solid;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+
 }
