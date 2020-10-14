@@ -38,12 +38,23 @@
 		line-height: 1.4;
 	}
 
+	&__icons {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 1.5rem;
+
+		& span {
+			display: block;
+		}
+	}
+
+
+/*
 
 	&__icons {
 		display: flex;
 		margin-top: 1.5rem;
 		justify-content: center;
-
 	}
 	
 
@@ -51,7 +62,7 @@
 
 		& a {
 			display: inline-block;
-			& img {
+			& span {
 				display: block;
 			}
 		}
@@ -60,6 +71,8 @@
 			margin-right: 3rem;
 		}
 	}
+
+	*/
 }
 
 

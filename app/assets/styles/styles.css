@@ -4,6 +4,7 @@
 @import "base/_global";
 @import "base/_animation";
 @import "base/_utilities";
+@import "modules/_sprite";
 @import "modules/_btn";
 @import "modules/_card";
 @import "modules/_page-section";

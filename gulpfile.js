@@ -13,7 +13,11 @@ del = require('del'),
 usemin = require('gulp-usemin'),
 rev = require('gulp-rev'),
 cssnano = require('gulp-cssnano'),
-uglify = require('gulp-uglify');
+uglify = require('gulp-uglify'),
+rename = require('gulp-rename'),
+svgSprite =require('gulp-svg-sprite'),
+svg2png = require('gulp-svg2png'),
+modernizr = require('gulp-modernizr');
 
 gulp.task('styles', function() {
   return gulp.src('./app/assets/styles/styles.css')
@@ -21,6 +25,65 @@ gulp.task('styles', function() {
     .on('error', (error) => console.log(error.toString()))
     .pipe(gulp.dest('./app/temp/styles'));
 });
+
+var config = {
+  shape: {
+    spacing: {
+      padding: 1
+    }
+  },
+  mode: {
+    css: {
+      variables: {
+        replaceSvgWithPng: function() {
+          return function(sprite, render) {
+            return render(sprite).split('.svg').join('.png'); 
+          }
+        }
+      },
+      sprite: 'sprite.svg',
+      render: {
+        css: {
+          template: './templates/sprite.css'
+        }
+      }
+    }
+  }
+}
+
+gulp.task('beginClean', function() {
+  return del(['./app/temp/sprite', './app/assets/images/sprites']);
+});
+
+gulp.task('createSprite', function() {
+  return gulp.src('./app/assets/images/icons/**/*.svg')
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest('./app/temp/sprite/'));
+});
+
+gulp.task('createPngCopy', function() {
+  return gulp.src('./app/temp/sprite/css/*.svg')
+    .pipe(svg2png())
+    .pipe(gulp.dest('./app/temp/sprite/css'));
+});
+
+gulp.task('copySpriteGraphic', function() {
+  return gulp.src('./app/temp/sprite/css/**/*.{svg,png}')
+  .pipe(gulp.dest('./app/assets/images/sprites'));
+});
+
+
+gulp.task('copySpriteCSS', function() {
+  return gulp.src('./app/temp/sprite/css/*.css')
+    .pipe(rename('_sprite.css'))
+    .pipe(gulp.dest('./app/assets/styles/modules'));
+});
+
+gulp.task('endClean', function() {
+  return del('./app/temp/sprite');
+});  
+
+gulp.task('icons', gulp.series('beginClean', 'createSprite', 'createPngCopy', 'copySpriteGraphic', 'copySpriteCSS', 'endClean'));
 
 gulp.task('scripts', function(callback) {
   webpack(require('./webpack.config.js'), function(err, stats) {
@@ -55,6 +118,16 @@ gulp.task('waitForScripts', gulp.series('scripts', function(cb) {
   browserSync.reload();
   cb()
 }))
+
+gulp.task('modernizr', function() {
+  return gulp.src(['./app/assets/styles/**/*.css', './app/assets/scripts/**/*.js'])
+    .pipe(modernizr({
+      "options": [
+        "setClasses"
+      ]
+    }))
+    .pipe(gulp.dest('./app/temp/scripts'));
+});
 
 
 
@@ -97,6 +170,7 @@ gulp.task('optimizeImages', function() {
 		.pipe(gulp.dest("./docs/assets/images"));
 });
 
+
 gulp.task('usemin', function() {
 	return gulp.src("./app/index.html")
 	.pipe(usemin({
@@ -106,7 +180,11 @@ gulp.task('usemin', function() {
 	.pipe(gulp.dest("./docs"));
 });
 
-gulp.task('build', gulp.series('deleteDistFolder', 'copyGeneralFiles', 'styles', 'scripts', gulp.parallel('optimizeImages', 'usemin')));
+
+
+
+
+gulp.task('build', gulp.series('deleteDistFolder', 'copyGeneralFiles', 'icons', 'styles', 'modernizr', 'scripts', 'optimizeImages', 'usemin'));
 
 
 
