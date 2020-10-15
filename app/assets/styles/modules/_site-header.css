@@ -29,6 +29,7 @@
 	&__logo {
 		text-align: center;
 		transform-origin: 0 50%;
+		backface-visibility: hidden;
 		transition: transform .3s ease-out;
 
 		@mixin atMedium {
@@ -41,6 +42,13 @@
 	&__logo-link {
 		text-decoration: none;
 		display: inline-block;
+		animation: moveInLeft 2s ease-out;
+		-webkit-animation: moveInLeft 2s ease-out;
+		animation-timing-function: cubic-bezier(.59,.05,0,1.16);
+		-webkit-animation-timing-function: cubic-bezier(.59,.05,0,1.16);
+		backface-visibility: hidden;
+
+
 
 		& h3 {
 			color: $mainColor;
@@ -65,7 +73,8 @@
 		z-index: 3;
 		
 
-		&__top {
+		&::before {
+			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -83,7 +92,8 @@
 			background-color: $primaryColor;
 		}
 
-		&__bottom {
+		&::after {
+			content: "";
 			position: absolute;
 			bottom: 0;
 			left: 0;
