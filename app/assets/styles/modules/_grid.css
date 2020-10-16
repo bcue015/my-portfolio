@@ -3,6 +3,24 @@
 	align-items: center;
 	flex-direction: column;
 
+	&--card-first-mb > div {
+		margin-bottom: 2.5rem;
+
+		@mixin atMedium {
+			margin-bottom: 0;
+		}
+	}
+	
+	&--card-second-mb > div:not(:last-child) {
+		margin-bottom: 2.5rem;
+
+		@mixin atMedium {
+			margin-bottom: 0;
+		}
+	}
+
+
+
 	@mixin atMedium {
 		&--skills-mb {
 			margin-bottom: 3.5rem;

@@ -1,10 +1,10 @@
 .my-skills {
 
 	&.lazyloaded {
-			box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.2);
-	background-image: linear-gradient(to right bottom, rgba(#e1bee7, 0.9), rgba(#e1bee7, 0.9)) ,url(../../assets/images/nat-4.jpg);
-	background-size: cover;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+		-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.2);
+		background-image: linear-gradient(to right bottom, rgba(#e1bee7, 0.9), rgba(#e1bee7, 0.9)) ,url(../../assets/images/nat-4.jpg);
+		background-size: cover;
 	}
 
 	
@@ -16,6 +16,11 @@
 		-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15), 0 2px 10px 0 rgba(0,0,0,0.15);
 		border-radius: .3rem;
 		margin-bottom: 2rem;
+		transition: transform .3s ease-out;
+
+		&:hover {
+			transform: translateY(-2rem) scale(1.02);
+		}
 
 
 		@mixin atMedium {

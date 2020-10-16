@@ -7,7 +7,7 @@
   <meta name="description" content="Website Creation At Its Finest">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/styles/styles-f7cb3038f4.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-3b089468c6.css"/>
 
   <script src="assets/scripts/Vendor-3db3d70292.js"></script>
 </head>
@@ -51,7 +51,7 @@
           <div class="large-hero__content">
             <h1 class="large-hero__title">Making your website as simple at its <span class="finest">finest.</span></h1>
             <p class="large-hero__text">Howdy! My name is Bambi and I am a wordpress developer. I can design simple yet astonishing responsive user-interfaces with user-experience on the fly. I can also create your own personal blog with wordpress and I can make it dynamic!</p>
-            <a href="#" class="btn btn--large btn--primary">Get in Touch</a>
+            <a href="#" class="btn btn--large btn--primary">Contact Me</a>
           </div>
         </div>
         <div class="col-lg-4">
@@ -75,7 +75,10 @@
       <div class="row row--md-flex-row row--gutters row--align-start trigger-reveal">
         <div class="col-md-5">
           <div class="card u-bg-gradient-main u-color-white">
-            <img class="lazyload" data-srcset="assets/images/bambi-1.jpg" alt="Bambi">
+            <div class="card__photo">
+              <img class="lazyload card__img" data-srcset="assets/images/bambi-1.jpg" alt="Bambi">
+              <figcaption class="card__caption u-bg-gradient-main">Howdy!</figcaption>
+            </div>
             <div class="card__body">
               <h4 class="card__title">Bambi Abangin</h4>
               <h5 class="card__subtitle">Wordpress Developer</h5>
@@ -87,19 +90,6 @@
                 <a href="#"><span class="icon icon--twitter"></span></a>
                 <a href="#"><span class="icon icon--youtube"></span></a>
               </div>
-              <!--
-              <div class="card__icons">
-                <div class="card__icon">
-                  <a class="" href="#"><img src="assets/images/icons/facebook.svg" alt="facebook"></a>
-                </div>
-                <div class="card__icon">
-                  <a class="" href="#"><img src="assets/images/icons/twitter.svg" alt="twitter"></a>
-                </div>
-                <div class="card__icon">
-                  <a class="" href="#"><img src="assets/images/icons/youtube.svg" alt="youtube"></a>
-                </div>
-              </div>
-            -->
             </div>
           </div>
         </div>
@@ -122,9 +112,9 @@
   </section>
 
   <section class="page-section my-skills lazyload" id="my-skills" data-matching-link="#my-skills-link">
-    <h1 class="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">My <span>Skills</span></h1>
     <div class="wrapper wrapper--my-profile">
-      <div class="row row--md-flex-row row--gutters row--skills-mb trigger-reveal">
+      <h1 class="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">My <span>Skills</span></h1>
+      <div class="row row--md-flex-row row--gutters row--skills-mb row--card-first-mb trigger-reveal">
         <div class="col-md-4">
           <div class="my-skills__card">
             <div class="my-skills__card-img">
@@ -159,7 +149,7 @@
           </div>
         </div>
       </div>
-      <div class="row row--md-flex-row row--gutters trigger-reveal">
+      <div class="row row--md-flex-row row--gutters row--card-second-mb trigger-reveal">
         <div class="col-md-4">
           <div class="my-skills__card my-skills__card--mb">
             <div class="my-skills__card-img">
@@ -282,11 +272,18 @@
 
   <footer class="site-footer u-bg-gradient-main page-section--very-small">
     <div class="wrapper trigger-footer">
-      <p><span class="site-footer__text">Copyright &copy; 2020 Bam Web Dev. All rights reserved.</span> <a class="btn btn--primary1" href="#">Get in Touch</a></p>
+      <p><span class="site-footer__text">Copyright &copy; 2020 Bam Web Dev. All rights reserved.</span> <a class="btn btn--primary1 open-modal" href="#">Contact Me</a></p>
     </div>
   </footer>
 
+  <div class="modal">
+    <div class="modal__inner">
+      <h1 class="modal__title">Contact Me</h1>
+    </div>
+    <div class="modal__close">X</div>
+  </div>
 
-  <script src="assets/scripts/App-efcc163c73.js"></script>
+
+  <script src="assets/scripts/App-29a4886abb.js"></script>
 </body>
 </html>
