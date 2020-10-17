@@ -29,7 +29,7 @@ gulp.task('styles', function() {
 var config = {
   shape: {
     spacing: {
-      padding: 1
+      padding: 0
     }
   },
   mode: {

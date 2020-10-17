@@ -1,15 +1,13 @@
 .modal {
 	position: fixed;
 	z-index: 5;
-	background-color: rgba(255, 255, 255, .94);
+	background-color: rgba(255, 255, 255, .95);
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	
 	opacity: 0;
 	visibility: hidden;
-	
 	transform: scale(1.2);
 	transition: all .3s ease-out;
 
@@ -21,28 +19,87 @@
 
 	&__inner {
 		position: absolute;
-		width: 100%;
 		top: 50%;
-		transform: translateY(-50%);
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0 18px;
+		width: 100%;
 	}
 
 	&__title {
 		text-align: center;
-		font-size: 1.3rem;
+		font-size: 4rem;
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 2rem;
+		margin-top: 0;
+		color: $mainColor;
+
+		@mixin atExtraSmall {
+			font-size: 5rem;
+		}
+	}
+
+	&__text {
+		max-width: 45rem;
+		margin: 0 auto 3rem auto;
+		text-align: center;
+		font-size: 2rem;
 		font-weight: 300;
-		line-height: 1.65;
+	}
+
+	&__icons {
+		max-width: 45rem;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__icon-links {
+		display: block;
+		padding: 1rem 1rem;
+		border-radius: 50%;
+		background-color: $mainColor;
+		margin-bottom: 3rem;
+
+		@mixin atExtraSmall {
+			padding: 1.5rem 1.5rem;
+		}
+
+		& span {
+			display: inline-block;
+		}
+	}
+
+	&__email {
+		text-align: center;
+		font-size: 1.7rem;
+		font-weight: 400;
+		line-height: 1.5;
+
+		@mixin atExtraSmall {
+			font-size: 2rem;
+		}
+
+		& span {
+			display: inline-block;
+			position: relative;
+			top: .6rem;
+		}
 	}
 
 	&__close {
 		position: absolute;
 		top: 15px;
 		right: 15px;
-		font-size: 2rem;
+		font-size: 4rem;
 		transform: scaleX(1.2);
 		transform-origin: 100% 0;
 		cursor: pointer;
+		color: $mainColor;
 
 		&:hover {
+			color: $primaryColor;
 		}
 	}
 }
