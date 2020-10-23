@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bam Web Dev</title>
-  <meta name="keywords" content="This is for Keywords">
+  <meta name="keywords" content="Website Creation, Web Development, Wordpress Development">
   <meta name="description" content="Website Creation At Its Finest">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
@@ -56,7 +56,7 @@
         </div>
         <div class="col-lg-4">
           <div class="large-hero__photo">
-            <img src="assets/images/bambi.jpg" alt="Bambi" class="large-hero__img">
+            <img sizes="332px" srcset="assets/images/bambi.jpg 332w, assets/images/bambi-hi-dpi.jpg 596w" alt="Bambi" class="large-hero__img">
             <div class="large-hero__description">
               <h1 class="large-hero__name">Bambi Abangin</h1>
               <p class="large-hero__job">Wordpress Developer</p>
@@ -76,7 +76,11 @@
         <div class="col-md-5">
           <div class="card u-bg-gradient-main u-color-white">
             <div class="card__photo">
-              <img class="lazyload" data-srcset="assets/images/bambi-1new.jpg" alt="Bambi">
+              <picture>
+                <source sizes="442px" data-srcset="assets/images/bambi-1-large.jpg 442w, assets/images/bambi-1-large-hi-dpi.jpg 884w" media="(min-width: 990px)">
+                <source sizes="378px" data-srcset="assets/images/bambi-1-medium.jpg 378w, assets/images/bambi-1-medium-hi-dpi.jpg 756w" media="(min-width: 768px)">
+                <img class="lazyload" data-srcset="assets/images/bambi-1-small.jpg 573w, assets/images/bambi-1-small-hi-dpi.jpg 1146w" alt="Bambi">
+              </picture>
             </div>
             <div class="card__body">
               <h4 class="card__title">Bambi Abangin</h4>
