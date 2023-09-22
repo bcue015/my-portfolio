@@ -1,304 +1,300 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bam Web Dev</title>
-  <meta name="keywords" content="Website Creation, Web Development, Wordpress Development">
-  <meta name="description" content="Website Creation At Its Finest">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bambi's Porfolio</title>
+    <meta name="keywords" content="Website Creation, Web Development, Wordpress Development" />
+    <meta name="description" content="Website Creation At Its Finest" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-  <!-- build:css assets/styles/styles.css -->
-  <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
-  <!-- endbuild -->
+    <!-- build:css assets/styles/styles.css -->
+    <link rel="stylesheet" type="text/css" href="temp/styles/styles.css" />
+    <!-- endbuild -->
 
-  <!-- build:js assets/scripts/Vendor.js -->
-  <script type="text/javascript" src="temp/scripts/Vendor.js"></script>
-  <!-- endbuild -->
-</head>
-<body>
-  <header class="site-header">
-    <div class="wrapper wrapper--flex">
-      <div class="site-header__logo">
-        <a href="#my-home" class="site-header__logo-link">
-          <h3 class="site-header__bamb-web">Bam Web</h3>
-          <h1 class="site-header__developer">Developer</h1>
-        </a>
-      </div>
-
-      <div class="site-header__menu-icon">
-        <div class="site-header__menu-icon__middle"></div>
-      </div>
-
-      <nav class="primary-nav" >
-        <ul>
-          <li>
-            <a href="#my-profile" id="my-profile-link">About</a>
-          </li>
-          <li>
-            <a href="#my-skills" id="my-skills-link">Skills</a>
-          </li>
-          <li>
-            <a href="#my-service" id="my-service-link">Service</a>
-          </li>
-          <li>
-            <a href="#my-goals" id="my-goals-link">Goals</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="large-hero" id="my-home">
-    <div class="wrapper wrapper--narrow-xs-to-md trigger-scroll">
-      <div class="row row--lg-flex-row row--gutters-small">
-        <div class="col-lg-8">
-          <div class="large-hero__content">
-            <h1 class="large-hero__title">Making your website as simple at its <span class="finest">finest.</span></h1>
-            <p class="large-hero__text">Howdy! My name is Bambi and I am a wordpress developer. I can design simple yet astonishing responsive user-interfaces with user-experience on the fly. I can also create your own personal blog with wordpress and I can make it dynamic!</p>
-            <a href="#" class="btn btn--large btn--primary open-modal">Contact Me</a>
-          </div>
+    <!-- build:js assets/scripts/Vendor.js -->
+    <script type="text/javascript" src="temp/scripts/Vendor.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper wrapper--flex">
+        <div class="site-header__logo">
+          <a href="#my-home" class="site-header__logo-link">
+            <h3 class="site-header__bamb-web">Bambi's</h3>
+            <h1 class="site-header__developer">Portfolio</h1>
+          </a>
         </div>
-        <div class="col-lg-4">
-          <div class="large-hero__photo">
-            <img sizes="332px" srcset="assets/images/bambi.jpg 332w, assets/images/bambi-hi-dpi.jpg 596w" alt="Bambi" class="large-hero__img">
-            <div class="large-hero__description">
-              <h1 class="large-hero__name">Bambi Abangin</h1>
-              <p class="large-hero__job">Wordpress Developer</p>
+
+        <div class="site-header__menu-icon">
+          <div class="site-header__menu-icon__middle"></div>
+        </div>
+
+        <nav class="primary-nav">
+          <ul>
+            <li>
+              <a href="#my-profile" id="my-profile-link">About</a>
+            </li>
+            <li>
+              <a href="#my-skills" id="my-skills-link">Skills</a>
+            </li>
+            <li>
+              <a href="#my-service" id="my-service-link">Service</a>
+            </li>
+            <li>
+              <a href="#my-goals" id="my-goals-link">Goals</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="large-hero" id="my-home">
+      <div class="wrapper wrapper--narrow-xs-to-md trigger-scroll">
+        <div class="row row--lg-flex-row row--gutters-small">
+          <div class="col-lg-8">
+            <div class="large-hero__content">
+              <h1 class="large-hero__title">Making a website sytem at its <span class="finest">finest.</span></h1>
+              <p class="large-hero__text">Howdy! My name is Bambi and I am a wordpress developer. I can design simple yet astonishing responsive user-interfaces with user-experience on the fly. I can also create your own personal blog with wordpress and I can make it dynamic!</p>
+              <a href="#" class="btn btn--large btn--primary open-modal">Contact Me</a>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section> 
-
-  <div class="wrapper"><hr></div>
-  
-  <section class="my-profile page-section" id="my-profile" data-matching-link="#my-profile-link">
-    <div class="wrapper wrapper--my-profile">
-      <h1 class="u-section-title u-section-title--mb-mt u-color-primary trigger-reveal">About <span>Me</span></h1>
-      <div class="row row--md-flex-row row--gutters row--align-start trigger-reveal">
-        <div class="col-md-5">
-          <div class="card u-bg-gradient-main u-color-white">
-            <div class="card__photo">
-              <picture>
-                <source sizes="442px" data-srcset="assets/images/bambi-1-large.jpg 442w, assets/images/bambi-1-large-hi-dpi.jpg 884w" media="(min-width: 990px)">
-                <img class="lazyload" data-srcset="assets/images/bambi-1-small.jpg 573w, assets/images/bambi-1-small-hi-dpi.jpg 1146w" alt="Bambi">
-              </picture>
-            </div>
-            <div class="card__body">
-              <h4 class="card__title">Bambi Abangin</h4>
-              <h5 class="card__subtitle">Wordpress Developer</h5>
-              <hr>
-              <p class="card__text">&quot; There's nothing much happier when I successfully output the design onto the webpage. Which is why I do really love coding because it is full of logic. &quot;</p>
-              <hr>
-              <div class="card__icons">
-                <a href="https://www.facebook.com/amawdotcomdotph" target="_blank"><span class="icon icon--facebook"></span></a>
-                <a href="https://twitter.com/Bambi92491688" target="_blank" class="card__icons--twitter"><span class="icon icon--twitter"></span></a>
-                <a href="https://www.youtube.com/channel/UCQv8fBPs460TnxwfVl2FeHw" target="_blank"><span class="icon icon--youtube"></span></a>
+          <div class="col-lg-4">
+            <div class="large-hero__photo">
+              <img sizes="332px" srcset="assets/images/bambi.jpg 332w, assets/images/bambi-hi-dpi.jpg 596w" alt="Bambi" class="large-hero__img" />
+              <div class="large-hero__description">
+                <h1 class="large-hero__name">Bambi Abangin</h1>
+                <p class="large-hero__job">GHL / React / Laravel Developer</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-7 u-resp-mt">
-          <div class="my-profile__story">
-            <h3 class="my-profile__story-title u-color-primary u-title-bb-mb" >My Web Dev Story</h3>
-            <div class="my-profile__story-text">
-              <p>It all started when a friend of mine(a web developer) told me about this web development stuffs while drinking beers and chillin' for good. I would've never be curious about it if he would have not told me his monthly income. So I went home, did a lot of search on it and this kind of job pays pretty well. And this where it began.</p>
-              <br>
-              <p>Youtube is my bestfriend whenever I want to learn something new and because of it I learned HTML, CSS, Bootstrap, PHP and Javascript. To tell you frankly, those video tutorials were not enough to enhance my skills so I have to dig deeper.</p>
-              <br>
-              <p>Thanks to torrent sites, I manage to download those paid/premium video tutorials cause I dont want to spend a single penny though you already knew how to get it for free. I always love freebies, no offense.</p>
-              <br>
-              <p>Then I watch those video courses and I didnt regret it. I learned about web development workflow, making your website responsive, about Node Package Manager(NPM), automation tools like Gulp and Webpack, contributing projects to Github, Object-Oriented Programming in Javascript, compiling and bundling CSS and Javascript, using BEM(Block Element Modifier) for your CSS Architecture and using Babel for Javascript. Wordpress is the one that I was excited and eager to learn and it took most of my time developing websites using wordpress.</p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="page-section my-skills lazyload" id="my-skills" data-matching-link="#my-skills-link">
-    <div class="wrapper wrapper--my-profile">
-      <h1 class="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">My <span>Skills</span></h1>
-      <div class="row row--md-flex-row row--gutters row--skills-mb row--card-first-mb trigger-reveal">
-        <div class="col-md-4">
-          <div class="my-skills__card">
-            <div class="my-skills__card-img">
-              <span class="icon icon--html"></span>
-            </div>
-            <div class="my-skills__card-body">
-              <h5 class="my-skills__card-title">HTML 5</h5>
-              <p class="my-skills__card-text">The very basic language in web development and the most easiest to learn of all time. It took me a week for me learn this language before proceeding CSS. But there are still some elements or tags that I need to work on with because I'm not really a fan of preemptive memorizing. Researching is my meat and potatoes.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="my-skills__card">
-            <div class="my-skills__card-img">
-              <span class="icon icon--css"></span>
-            </div>
-            <div class="my-skills__card-body">
-              <h5 class="my-skills__card-title">CSS 3</h5>
-              <p class="my-skills__card-text">The language that made me hook for two months and still learning more about it. CSS will provide an eye-catching website and making it responsive to all devices like mobile and desktop. Some of developers underestimated this language because they think that its is so quite easy. Well, they have to reconsider to think again.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="my-skills__card">
-            <div class="my-skills__card-img">
-              <span class="icon icon--javascript"></span>
-            </div>
-            <div class="my-skills__card-body">
-              <h5 class="my-skills__card-title">Javascript</h5>
-              <p class="my-skills__card-text">The most interactive language in my web development courses. Though I only learn basics like object-oriented programming, its quite helpful for me as a developer in terms of manipulating classes or id's in the DOM(Document Object Model). In fact this is my stepping stone in learning more and more about javascript.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row--md-flex-row row--gutters row--card-second-mb trigger-reveal">
-        <div class="col-md-4">
-          <div class="my-skills__card my-skills__card--mb">
-            <div class="my-skills__card-img">
-              <<span class="icon icon--bootstrap"></span>
-            </div>
-            <div class="my-skills__card-body">
-              <h5 class="my-skills__card-title">Bootstrap 4</h5>
-              <p class="my-skills__card-text">I'm not really a fan of using bootstrap but I've had some experience of using it. It's quite easy and it can boost your web development workflow since it already have pre-designed components like carousel, buttons, alerts, cards and much more. But it can also be a pain when your employer wants a custom design and you're screwed.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="my-skills__card my-skills__card--mb">
-            <div class="my-skills__card-img">
-              <span class="icon icon--wordpress"></span>
-            </div>
-            <div class="my-skills__card-body">
-              <h5 class="my-skills__card-title">Wordpress</h5>
-              <p class="my-skills__card-text">At first, I had some difficulties of learning wordpress because this was my first CMS(Content Management System). It only requires a basic PHP knowledge and from time to time, I finally get it. I learned Custom Post Type, Wordpress Loop, Custom Queries, Advance Custom Fields, Communicating to REST API and much more.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="my-skills__card my-skills__card--mb">
-            <div class="my-skills__card-img">
-              <span class="icon icon--gulp"></span>
-            </div>
-            <div class="my-skills__card-body">
-              <h5 class="my-skills__card-title">Gulp 4</h5>
-              <p class="my-skills__card-text">An automation tool that saves the day. Gulp saves me from auto compiling/bundling CSS and Javascript, auto-reloading webpages using browser-sync, optimizing images and svg's, minifying Javascript and CSS, and building. I already have my own configuration in my gulpfile and I used it in every projects to speed up my workflow.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="wrapper"><hr /></div>
 
-  <section class="my-service page-section" id="my-service" data-matching-link="#my-service-link">
-    <h1 class="u-section-title u-section-title--mb-mt u-color-primary trigger-reveal">My <span>Service</span></h1>
-    <div class="wrapper">
-      <div class="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
-        <div class="col-md-5 col-md-5--order-2">
-          <div>
-            <img src="assets/images/svg/service-html.svg" alt="">
+    <section class="my-profile page-section" id="my-profile" data-matching-link="#my-profile-link">
+      <div class="wrapper wrapper--my-profile">
+        <h1 class="u-section-title u-section-title--mb-mt u-color-primary trigger-reveal">About <span>Me</span></h1>
+        <div class="row row--md-flex-row row--gutters row--align-start trigger-reveal">
+          <div class="col-md-5">
+            <div class="card u-bg-gradient-main u-color-white">
+              <div class="card__photo">
+                <picture>
+                  <source sizes="442px" data-srcset="assets/images/bambi-1-large.jpg 442w, assets/images/bambi-1-large-hi-dpi.jpg 884w" media="(min-width: 990px)" />
+                  <img class="lazyload" data-srcset="assets/images/bambi-1-small.jpg 573w, assets/images/bambi-1-small-hi-dpi.jpg 1146w" alt="Bambi" />
+                </picture>
+              </div>
+              <div class="card__body">
+                <h4 class="card__title">Bambi Abangin</h4>
+                <h5 class="card__subtitle">Wordpress Developer</h5>
+                <hr />
+                <p class="card__text">&quot; There's nothing much happier when I successfully output the design onto the webpage. Which is why I do really love coding because it is full of logic. &quot;</p>
+                <hr />
+                <div class="card__icons">
+                  <a href="https://www.facebook.com/amawdotcomdotph" target="_blank"><span class="icon icon--facebook"></span></a>
+                  <a href="https://twitter.com/Bambi92491688" target="_blank" class="card__icons--twitter"><span class="icon icon--twitter"></span></a>
+                  <a href="https://www.youtube.com/channel/UCQv8fBPs460TnxwfVl2FeHw" target="_blank"><span class="icon icon--youtube"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 u-resp-mt">
+            <div class="my-profile__story">
+              <h3 class="my-profile__story-title u-color-primary u-title-bb-mb">My Web Dev Story</h3>
+              <div class="my-profile__story-text">
+                <p>It all started when a friend of mine(a web developer) told me about this web development stuffs while drinking beers and chillin' for good. I would've never be curious about it if he would have not told me his monthly income. So I went home, did a lot of search on it and this kind of job pays pretty well. And this where it began.</p>
+                <br />
+                <p>Youtube is my bestfriend whenever I want to learn something new and because of it I learned HTML, CSS, Bootstrap, PHP and Javascript. To tell you frankly, those video tutorials were not enough to enhance my skills so I have to dig deeper.</p>
+                <br />
+                <p>Thanks to torrent sites, I manage to download those paid/premium video tutorials cause I dont want to spend a single penny though you already knew how to get it for free. I always love freebies, no offense.</p>
+                <br />
+                <p>Then I watch those video courses and I didnt regret it. I learned about web development workflow, making your website responsive, about Node Package Manager(NPM), automation tools like Gulp and Webpack, contributing projects to Github, Object-Oriented Programming in Javascript, compiling and bundling CSS and Javascript, using BEM(Block Element Modifier) for your CSS Architecture and using Babel for Javascript. Wordpress is the one that I was excited and eager to learn and it took most of my time developing websites using wordpress.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-7">
-          <div class="my-profile__story">
-            <h3 class="my-profile__story-title u-color-primary u-title-bb-mb">Web Design/Development</h3>
-            <div class="my-profile__story-text">
-              <p>I will convert your design/PSD into HTML and CSS with Javascipt.</p>
+      </div>
+    </section>
 
+    <section class="page-section my-skills lazyload" id="my-skills" data-matching-link="#my-skills-link">
+      <div class="wrapper wrapper--my-profile">
+        <h1 class="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">My <span>Skills</span></h1>
+        <div class="row row--md-flex-row row--gutters row--skills-mb row--card-first-mb trigger-reveal">
+          <div class="col-md-4">
+            <div class="my-skills__card">
+              <div class="my-skills__card-img">
+                <span class="icon icon--html"></span>
+              </div>
+              <div class="my-skills__card-body">
+                <h5 class="my-skills__card-title">HTML 5</h5>
+                <p class="my-skills__card-text">The very basic language in web development and the most easiest to learn of all time. It took me a week for me learn this language before proceeding CSS. But there are still some elements or tags that I need to work on with because I'm not really a fan of preemptive memorizing. Researching is my meat and potatoes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="my-skills__card">
+              <div class="my-skills__card-img">
+                <span class="icon icon--css"></span>
+              </div>
+              <div class="my-skills__card-body">
+                <h5 class="my-skills__card-title">CSS 3</h5>
+                <p class="my-skills__card-text">The language that made me hook for two months and still learning more about it. CSS will provide an eye-catching website and making it responsive to all devices like mobile and desktop. Some of developers underestimated this language because they think that its is so quite easy. Well, they have to reconsider to think again.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="my-skills__card">
+              <div class="my-skills__card-img">
+                <span class="icon icon--javascript"></span>
+              </div>
+              <div class="my-skills__card-body">
+                <h5 class="my-skills__card-title">Javascript</h5>
+                <p class="my-skills__card-text">The most interactive language in my web development courses. Though I only learn basics like object-oriented programming, its quite helpful for me as a developer in terms of manipulating classes or id's in the DOM(Document Object Model). In fact this is my stepping stone in learning more and more about javascript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row--md-flex-row row--gutters row--card-second-mb trigger-reveal">
+          <div class="col-md-4">
+            <div class="my-skills__card my-skills__card--mb">
+              <div class="my-skills__card-img"><<span class="icon icon--bootstrap"></span></div>
+              <div class="my-skills__card-body">
+                <h5 class="my-skills__card-title">Bootstrap 4</h5>
+                <p class="my-skills__card-text">I'm not really a fan of using bootstrap but I've had some experience of using it. It's quite easy and it can boost your web development workflow since it already have pre-designed components like carousel, buttons, alerts, cards and much more. But it can also be a pain when your employer wants a custom design and you're screwed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="my-skills__card my-skills__card--mb">
+              <div class="my-skills__card-img">
+                <span class="icon icon--wordpress"></span>
+              </div>
+              <div class="my-skills__card-body">
+                <h5 class="my-skills__card-title">Wordpress</h5>
+                <p class="my-skills__card-text">At first, I had some difficulties of learning wordpress because this was my first CMS(Content Management System). It only requires a basic PHP knowledge and from time to time, I finally get it. I learned Custom Post Type, Wordpress Loop, Custom Queries, Advance Custom Fields, Communicating to REST API and much more.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="my-skills__card my-skills__card--mb">
+              <div class="my-skills__card-img">
+                <span class="icon icon--gulp"></span>
+              </div>
+              <div class="my-skills__card-body">
+                <h5 class="my-skills__card-title">Gulp 4</h5>
+                <p class="my-skills__card-text">An automation tool that saves the day. Gulp saves me from auto compiling/bundling CSS and Javascript, auto-reloading webpages using browser-sync, optimizing images and svg's, minifying Javascript and CSS, and building. I already have my own configuration in my gulpfile and I used it in every projects to speed up my workflow.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
-        <div class="col-md-5 col-md-5--order-1">
-          <div>
-            <img src="assets/images/svg/service-wordpress.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="my-profile__story">
-            <h3 class="my-profile__story-title u-color-primary u-resp-mt u-title-bb-mb">Wordpress Development</h3>
-            <div class="my-profile__story-text">
-              <p>I will convert your design/PSD or HTML to Wordpress. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
-        <div class="col-md-5 col-md-5--order-2">
-          <div>
-            <img src="assets/images/svg/service-full.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="my-profile__story">
-            <h3 class="my-profile__story-title u-color-primary u-title-bb-mb">Wordpress Blog Creation</h3>
-            <div class="my-profile__story-text">
-              <p>I will create your own Wordpress Blog, with unique and astonishing design. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="my-profile__note">
-        <h4 class="my-profile__note-text">Note: I can do designing as well if you're not able to provide your own design. Give me some information about your website and we are set. I will then provide all of the source code files after the website is done.</h4>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="my-goals page-section page-section--no-pb" id="my-goals" data-matching-link="#my-goals-link">
-    <h1 class="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">My <span>Goals</span></h1>
-    <img class="my-goals__wave lazyload" data-srcset="assets/images/wave.png" alt="">
-    <div class="wrapper trigger-reveal">
-      <div class="row row--lg-flex-row row--gutters-large">
-        <div class="col-lg-6">
+    <section class="my-service page-section" id="my-service" data-matching-link="#my-service-link">
+      <h1 class="u-section-title u-section-title--mb-mt u-color-primary trigger-reveal">My <span>Service</span></h1>
+      <div class="wrapper">
+        <div class="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
+          <div class="col-md-5 col-md-5--order-2">
+            <div>
+              <img src="assets/images/svg/service-html.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="my-profile__story">
+              <h3 class="my-profile__story-title u-color-primary u-title-bb-mb">Web Design/Development</h3>
+              <div class="my-profile__story-text">
+                <p>I will convert your design/PSD into HTML and CSS with Javascipt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
+          <div class="col-md-5 col-md-5--order-1">
+            <div>
+              <img src="assets/images/svg/service-wordpress.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="my-profile__story">
+              <h3 class="my-profile__story-title u-color-primary u-resp-mt u-title-bb-mb">Wordpress Development</h3>
+              <div class="my-profile__story-text">
+                <p>I will convert your design/PSD or HTML to Wordpress.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
+          <div class="col-md-5 col-md-5--order-2">
+            <div>
+              <img src="assets/images/svg/service-full.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="my-profile__story">
+              <h3 class="my-profile__story-title u-color-primary u-title-bb-mb">Wordpress Blog Creation</h3>
+              <div class="my-profile__story-text">
+                <p>I will create your own Wordpress Blog, with unique and astonishing design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-profile__note">
+          <h4 class="my-profile__note-text">Note: I can do designing as well if you're not able to provide your own design. Give me some information about your website and we are set. I will then provide all of the source code files after the website is done.</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-goals page-section page-section--no-pb" id="my-goals" data-matching-link="#my-goals-link">
+      <h1 class="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">My <span>Goals</span></h1>
+      <img class="my-goals__wave lazyload" data-srcset="assets/images/wave.png" alt="" />
+      <div class="wrapper trigger-reveal">
+        <div class="row row--lg-flex-row row--gutters-large">
+          <div class="col-lg-6">
             <div class="my-goals__img">
-              <img src="assets/images/svg/goals.svg" alt="">
+              <img src="assets/images/svg/goals.svg" alt="" />
             </div>
-        </div>
-        <div class="col-lg-6 col-lg-6--align-start u-resp-mt--at-large">
+          </div>
+          <div class="col-lg-6 col-lg-6--align-start u-resp-mt--at-large">
             <div class="my-profile__story">
               <h3 class="my-profile__story-title u-color-main u-title-bb-mb">An Ongoing Learning</h3>
               <div class="my-profile__story-text">
                 <p>Staying current is what I have in my mind right now because I dont want to get behind. Web development, wordpress specifically, is in demand yet a crowded places wherin you could meet a lots of talented competitors. Not to mention there are page-builders to which the one who doesn't know about coding can build an extravagant websites. And staying current to all of my tools and designs will help me rise up.</p>
-                <br>
+                <br />
                 <p>Next is learning javascript. Javascript is a popular language which most of the developers used. And I'm still learning a thing or two about this language, but first I have to learn the plain javascript language to whom they refered as &quot;vanilla javascript&quot;, before I proceed to those javascript frameworks like jquery and react.</p>
-                <br>
+                <br />
                 <p>And finally, I have to learn about advance wordpress, like the famous wordpress plugin woocommerce. Every e-commerce website always strikes my curiousity on how would they do it, how do they integrate payments or any questions regarding e-commerce that makes the question mark revolves around my head.</p>
-                <br>
+                <br />
                 <p>But it doesn't matter because I will never stop from learning. And if curiousity strikes me, then I will have to dig deeper cause its all worth it.</p>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="site-footer u-bg-gradient-main page-section--very-small">
-    <div class="wrapper trigger-footer">
-      <p><span class="site-footer__text">Copyright &copy; 2020 Bam Web Dev. All rights reserved.</span> <a class="btn btn--primary1 open-modal" href="#">Contact Me</a></p>
-    </div>
-  </footer>
-
-  <div class="modal">
-    <div class="modal__inner">
-      <h1 class="modal__title">Contact Me</h1>
-      <p class="modal__text">I will be having an online message soon. For the meantime, you can contact me in the following platforms below.</p>
-      <div class="modal__icons">
-        <a href="https://www.facebook.com/amawdotcomdotph" target="_blank" class="modal__icon-links"><span class="icon icon--modal-facebook"></span></a>
-        <a href="https://twitter.com/Bambi92491688" target="_blank" class="modal__icon-links modal__icon-links--twitter"><span class="icon icon--modal-twitter"></span></a>
-        <a href="https://www.youtube.com/channel/UCQv8fBPs460TnxwfVl2FeHw" target="_blank" class="modal__icon-links"><span class="icon icon--modal-youtube"></span></a>
+    <footer class="site-footer u-bg-gradient-main page-section--very-small">
+      <div class="wrapper trigger-footer">
+        <p><span class="site-footer__text">Copyright &copy; 2020 Bam Web Dev. All rights reserved.</span> <a class="btn btn--primary1 open-modal" href="#">Contact Me</a></p>
       </div>
-      <h5 class="modal__email"><span class="icon icon--modal-mail"></span> Email: barbiecuedotcom@gmail.com</h5>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__inner">
+        <h1 class="modal__title">Contact Me</h1>
+        <p class="modal__text">I will be having an online message soon. For the meantime, you can contact me in the following platforms below.</p>
+        <div class="modal__icons">
+          <a href="https://www.facebook.com/amawdotcomdotph" target="_blank" class="modal__icon-links"><span class="icon icon--modal-facebook"></span></a>
+          <a href="https://twitter.com/Bambi92491688" target="_blank" class="modal__icon-links modal__icon-links--twitter"><span class="icon icon--modal-twitter"></span></a>
+          <a href="https://www.youtube.com/channel/UCQv8fBPs460TnxwfVl2FeHw" target="_blank" class="modal__icon-links"><span class="icon icon--modal-youtube"></span></a>
+        </div>
+        <h5 class="modal__email"><span class="icon icon--modal-mail"></span> Email: barbiecuedotcom@gmail.com</h5>
+      </div>
+      <div class="modal__close">X</div>
     </div>
-    <div class="modal__close">X</div>
-  </div>
 
-
-  <!-- build:js assets/scripts/App.js -->
-  <script type="text/javascript" src="temp/scripts/App.js"></script>
-  <!-- endbuild -->
-</body>
+    <!-- build:js assets/scripts/App.js -->
+    <script type="text/javascript" src="temp/scripts/App.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
